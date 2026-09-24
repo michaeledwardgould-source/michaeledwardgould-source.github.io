@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V4 Broker | V4 Research Lab</title>
+<meta name="description" content="V4 Broker is Michael Gould’s personal Google Sheets integration for controlled V4 Research Lab workflow checks.">
+<style>
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172438; background: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 17px; line-height: 1.7; }
+header { background: #11273e; color: white; }
+nav, main, footer { max-width: 850px; margin: auto; padding: 24px; }
+nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; }
+nav .brand { font-size: 21px; font-weight: 700; }
+nav .links { display: flex; gap: 22px; flex-wrap: wrap; }
+nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+main { background: white; margin-top: 32px; margin-bottom: 32px; padding: 38px; border-top: 4px solid #126487; }
+h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.2; margin: 0 0 14px; letter-spacing: -.025em; }
+h2 { font-size: 23px; line-height: 1.35; margin-top: 32px; margin-bottom: 10px; }
+p { margin: 12px 0; }
+a { color: #07597d; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #b95606; outline-offset: 5px; }
+.lead { font-size: 20px; color: #35485e; }
+.meta { color: #526176; font-size: 15px; }
+.note { padding: 16px 20px; background: #eef5f9; border-left: 3px solid #126487; }
+li { margin-bottom: 10px; }
+footer { font-size: 15px; color: #526176; padding-top: 0; }
+@media (max-width: 600px) { main { margin: 18px 12px; padding: 24px 20px; } nav { padding: 18px 24px; } }
+</style>
+</head>
+<body>
+<header><nav aria-label="Main navigation"><a class="brand" href="index.html">V4 Broker</a><div class="links"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy policy</a></div></nav></header>
+<main id="main">
+<h1>V4 Broker</h1>
+<p class="lead">A personal Google Sheets integration for controlled workflow checks in V4 Research Lab.</p>
+<p>V4 Broker is operated by Michael Gould for his own use. It connects an authenticated operator to a private service that can validate a designated Google Sheet and record approved test evidence.</p>
+<h2>What the application does</h2>
+<ul>
+<li>Checks the structure and contents of a specifically configured spreadsheet tab.</li>
+<li>Records an explicitly approved test result and checks that the recorded evidence is consistent.</li>
+<li>Keeps local audit and recovery records so interrupted work can be reviewed.</li>
+</ul>
+<p class="note">Google consent grants API permission. Each test still requires separate operator authorization. Connecting an account does not itself start a test or authorize scientific execution.</p>
+<h2>Google account access</h2>
+<p>The application requests Google Sheets access and an offline authorization token so its private service can maintain an authorized connection. Google’s Sheets permission is broad; the broker’s configured workflow restricts its use to the designated test target. The application does not request Gmail access.</p>
+<p>This public website provides application and privacy information. It does not provide public access to the broker or collect Google credentials.</p>
+<h2>Privacy and support</h2>
+<p>Read the <a href="privacy.html">V4 Broker privacy policy</a> for details about Google data, storage, retention, and removing access.</p>
+<p>Operator and support contact: Michael Gould, <a href="mailto:michaeledwardgould@gmail.com">michaeledwardgould@gmail.com</a>.</p>
+</main>
+<footer>V4 Broker · Operated by Michael Gould · <a href="mailto:michaeledwardgould@gmail.com">Contact</a></footer>
+</body>
+</html>

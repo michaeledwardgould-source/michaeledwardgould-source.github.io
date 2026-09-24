@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy | V4 Broker</title>
+<meta name="description" content="How V4 Broker accesses, uses, stores, and handles Google Sheets information and authorization credentials.">
+<style>
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172438; background: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 17px; line-height: 1.7; }
+header { background: #11273e; color: white; }
+nav, main, footer { max-width: 850px; margin: auto; padding: 24px; }
+nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; }
+nav .brand { font-size: 21px; font-weight: 700; }
+nav .links { display: flex; gap: 22px; flex-wrap: wrap; }
+nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+main { background: white; margin-top: 32px; margin-bottom: 32px; padding: 38px; border-top: 4px solid #126487; }
+h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.2; margin: 0 0 14px; letter-spacing: -.025em; }
+h2 { font-size: 23px; line-height: 1.35; margin-top: 32px; margin-bottom: 10px; }
+p { margin: 12px 0; }
+a { color: #07597d; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #b95606; outline-offset: 5px; }
+.lead { font-size: 20px; color: #35485e; }
+.meta { color: #526176; font-size: 15px; }
+.note { padding: 16px 20px; background: #eef5f9; border-left: 3px solid #126487; }
+li { margin-bottom: 10px; }
+footer { font-size: 15px; color: #526176; padding-top: 0; }
+@media (max-width: 600px) { main { margin: 18px 12px; padding: 24px 20px; } nav { padding: 18px 24px; } }
+</style>
+</head>
+<body>
+<header><nav aria-label="Main navigation"><a class="brand" href="index.html">V4 Broker</a><div class="links"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy policy</a></div></nav></header>
+<main id="main">
+<h1>Privacy policy</h1>
+<p class="meta">V4 Broker · Last updated September 24, 2026</p>
+<p>This policy describes V4 Broker, a personal application operated by Michael Gould for controlled Google Sheets workflow checks in V4 Research Lab. It also describes this public information website.</p>
+<h2>Information the broker accesses</h2>
+<p>When authorized by the account owner, the broker can access the configured spreadsheet’s identifier, tab names and properties, column headers, and cell contents needed to validate the target and reconcile approved test evidence. It can append an approved evidence record to the designated tab.</p>
+<p>The Google Sheets permission shown during consent is broader than a single spreadsheet. The broker’s operating configuration and authorization checks limit its activity to its designated target. Google consent alone does not authorize a test. The application does not request access to Gmail messages or contacts.</p>
+<p>The setup stores an OAuth client identifier and secret, a Google refresh token, and short-lived access tokens. These let the service access the Sheets API with the account owner’s permission. Google handles sign-in; the broker does not receive the Google account password.</p>
+<p>The broker also processes its enrolled operator identity, client-certificate information, authorization decisions, timestamps, test evidence, and operational or recovery records.</p>
+<h2>How information is used</h2>
+<p>Information is used to authenticate the operator, maintain the authorized Google connection, validate the designated Sheet, perform specifically approved workflow checks, record evidence, prevent duplicate or unauthorized actions, and support troubleshooting and recovery.</p>
+<p>Google user data is not sold, used for advertising, or used to train generalized artificial-intelligence or machine-learning models. Any future change that introduces a new use of Google data will require an updated disclosure and the account owner’s consent before that use begins.</p>
+<h2>Storage and access</h2>
+<p>The private broker runs in the operator’s Google Cloud project. Credentials, configuration, and operational records are stored in access-restricted files or local databases. Setup copies of credentials may also remain in the operator’s Cloud Shell storage. Google API connections use HTTPS, and operator connections to the broker use mutual TLS authentication.</p>
+<p>Snapshots and backups may contain broker configuration, credentials, and operational records. Access is controlled through the operator’s Google Cloud permissions. Google Sheets retains the spreadsheet data in the authorized Google account.</p>
+<p>The operator and the infrastructure services needed to run the application, principally Google APIs and Google Cloud, handle the data for these purposes. Broker credentials and spreadsheet contents are not intentionally published to this website or its public GitHub repository. Information may be disclosed when legally required.</p>
+<h2>Retention and deletion</h2>
+<p>Credentials are retained while needed for the authorized connection. Evidence, audit records, and recovery files are retained for the operator’s workflow and recovery needs until the operator removes them. Scheduled snapshots follow their configured retention policy; manually retained snapshots and restore disks remain until separately deleted. Deleting a working copy does not immediately remove a retained backup.</p>
+<p>The account owner can remove V4 Broker’s access through the <a href="https://myaccount.google.com/connections">Google Account connections page</a>. Revoking access prevents further authorized Google API access once it takes effect; it does not automatically delete existing spreadsheet entries, local records, setup credential copies, or backups.</p>
+<p>For access, deletion, or retention requests, contact <a href="mailto:michaeledwardgould@gmail.com">michaeledwardgould@gmail.com</a>. The operator can review the relevant working copies and backups and explain any records that must be retained.</p>
+<h2>This website</h2>
+<p>This information website has no sign-in form, advertising, analytics scripts, or application-set cookies. GitHub Pages hosts the site. GitHub records visitor IP addresses for security purposes as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Visiting this website does not connect a Google account to the broker.</p>
+<h2>Google API data commitments</h2>
+<p>V4 Broker’s use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+<h2>Contact and changes</h2>
+<p>Operator: Michael Gould.<br>Email: <a href="mailto:michaeledwardgould@gmail.com">michaeledwardgould@gmail.com</a>.</p>
+<p>Updates will appear on this page with a revised date. Material changes to Google data use will be disclosed before they take effect, with renewed consent where required.</p>
+</main>
+<footer>V4 Broker · Operated by Michael Gould · <a href="mailto:michaeledwardgould@gmail.com">Contact</a></footer>
+</body>
+</html>
